@@ -1,0 +1,102 @@
+.hero-image {
+    margin: 0;
+    background-image: url('/byggnad.jpg');
+    min-height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    background-color: white;
+    max-width: 900px;
+    text-align: left;
+    color: black;
+    margin: 0 auto;
+    padding: 1rem 2rem 2rem 2rem;
+    border-radius: 10px;
+}
+
+.hero-text button {
+    border: 1px solid white;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(101, 158, 204);
+}
+
+.hero-text button:hover {
+    background-color: rgb(19, 112, 189);
+    color: white;
+    transform: translateY(-1px)
+}
+
+h1 {
+    margin: 0 0 1rem 0;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.start-h1 {
+    padding: 1rem 0;
+}
+
+.boxes-container {
+    display: flex;
+    gap: 6.5rem;
+    padding: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: rgb(189, 197, 204);
+}
+
+.boxes {
+    background-color: rgb(101, 158, 204);
+    width: 300px;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+}
+
+.boxes:hover {
+    transform: translateY(-2px);
+    background-color: rgb(19, 112, 189);
+    color: white;
+}
+
+.boxes img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+blockquote {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.7rem;
+}
+
+.citat {
+   
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+

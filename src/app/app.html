@@ -1,11 +1,18 @@
 <header class="site-header">
-  <a routerLink="/" class="logo">KaTH</a>
-  <nav>
-    <a routerLink="/">Start</a>
-    <a routerLink="/kurser">Skolans kurser</a>
-    <a routerLink="/ramschema">Mitt ramschema</a>
+  <a routerLink="/" class="logo">
+    <img src="/logo.webp" alt="KaTH-logotyp" class="logo-img"></a>
+  
+  <nav class="main-nav">
+    <a routerLink="/">START |</a>
+    <a routerLink="/kurser">SKOLANS KURSER |</a>
+    <a routerLink="/ramschema">MITT RAMSCHEMA |</a>
   </nav>
+  <div class="header-empty"></div>
 </header>
 <main>
-  <router-outlet></router-outlet>
+  <router-outlet />
 </main>
+<footer>
+  <p>KaTH University</p>
+  <p>Kattegatt</p>
+</footer>
