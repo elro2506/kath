@@ -36,7 +36,7 @@
 .hero-text button:hover {
     background-color: rgb(19, 112, 189);
     color: white;
-    transform: translateY(-1px)
+    transform: translateY(-2px)
 }
 
 h1 {
@@ -48,13 +48,17 @@ main {
     margin: 0 auto;
 }
 
+main p {
+    font-size: 1.2rem;
+}
+
 .start-h1 {
     padding: 1rem 0;
 }
 
 .boxes-container {
     display: flex;
-    gap: 6.5rem;
+    gap: 3.3rem;
     padding: 3rem;
     justify-content: center;
     flex-wrap: wrap;
@@ -65,18 +69,25 @@ main {
 
 .boxes {
     background-color: rgb(101, 158, 204);
-    width: 300px;
-    padding: 1rem;
+    width: 330px;
     text-decoration: none;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     cursor: pointer;
 
 }
 
+.boxes h2 {
+    padding: 0 1rem;
+    font-weight: 100;
+}
+
+.boxes p {
+padding: 0 1rem 1rem 1rem;
+}
+
 .boxes:hover {
-    transform: translateY(-2px);
     background-color: rgb(19, 112, 189);
     color: white;
 }
@@ -94,9 +105,65 @@ blockquote {
 }
 
 .citat {
-   
     padding: 1rem;
     max-width: 600px;
     margin: 0 auto;
+}
+
+.faktaruta {
+    background-color: rgb(19, 112, 189);
+    padding: 1rem;
+}
+
+.faktaruta h2 {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.fakta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    color: white;
+    padding: 0;
+}
+
+.fakta h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.fakta p {
+    padding-top: 0;
+}
+
+.bild-citat {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(101, 158, 204);
+    align-items: stretch;
+    margin-bottom: 20px;
+}
+
+.bild-citat img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.citatnamn {
+    text-align: center;
+}
+
+.citatet {
+padding: 2rem;
+}
+
+.citattext, .radavstand {
+    line-height: 1.5;
 }
 
