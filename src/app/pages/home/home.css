@@ -167,3 +167,45 @@ padding: 2rem;
     line-height: 1.5;
 }
 
+
+@media (max-width: 600px) {
+  .hero-text {
+    margin: 30px;
+  }
+
+  .hero-text button {
+    font-size: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.3rem;
+  }
+
+  main {
+    margin: 20px;
+  }
+
+  .boxes-container {
+width: 100%;
+  }
+
+  .boxes {
+    width: 100%;
+  }
+
+  .boxes img {
+    height: 200px;
+  }
+
+.fakta {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+  .bild-citat {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+ 
+}
