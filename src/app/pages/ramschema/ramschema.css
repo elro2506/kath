@@ -1,0 +1,50 @@
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    padding: 0.4rem 2rem;
+    box-shadow: 10px 5px 5px grey;
+    margin-bottom: 30px;
+    }
+
+.delete-button {
+    align-self: center;
+    text-align: right;
+}
+
+button {
+    background-color: rgb(19, 112, 189);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.ramschema-boxes {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+@media (max-width: 900px) {
+
+    main {
+        margin: 20px;
+    }
+    .ramschema-boxes {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+}

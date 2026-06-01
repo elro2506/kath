@@ -1,0 +1,86 @@
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+td,
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    cursor: pointer;
+}
+
+.kursplan,
+.progression,
+.kurskod {
+    width: 100px;
+}
+
+.add {
+    width: 120px;
+}
+
+.points {
+    width: 80px;
+}
+
+.kurskod {
+    font-weight: bold;
+}
+
+.kursplan a {
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(209, 223, 235)
+}
+
+th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    text-align: left;
+    background-color: rgb(101, 158, 204);
+    color: white;
+}
+
+input {
+    width: 300px;
+    padding: 0.6rem;
+}
+
+select {
+    width: 300px;
+    padding: 0.6rem;
+    margin: 20px;
+}
+
+button {
+    background-color: rgb(19, 112, 189);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.3rem 1rem;
+    margin: 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(101, 158, 204);
+}
+
+button:visited {
+    background-color: rgb(153, 153, 153);
+}

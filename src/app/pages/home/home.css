@@ -3,7 +3,7 @@
 }
 .hero-image {
     margin: 0;
-    background-image: url('/byggnad.jpg');
+    background-image: url('/byggnad.webp');
     min-height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -171,7 +171,7 @@ padding: 2rem;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .hero-text {
     margin: 30px;
   }
