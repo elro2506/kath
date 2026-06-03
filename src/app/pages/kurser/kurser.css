@@ -8,13 +8,18 @@ table {
     font-size: 0.8rem;
     border-collapse: collapse;
     width: 100%;
+    max-width: 100%;
     margin-bottom: 30px;
+    table-layout: fixed;
+    font-size: 0.75rem;
 }
 
 td,
 th {
     border: 1px solid #ddd;
     padding: 8px;
+    word-break: break-word;
+    overflow-wrap: anywhere;
 }
 
 th {
