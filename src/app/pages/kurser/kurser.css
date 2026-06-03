@@ -110,17 +110,14 @@ table {
         font-size: 0.8rem;
     }
 
-    .kurskod, .rubrikKursKod, .points, .rubrikPoints {
-        width: 60px;
-        max-width: 60px;
-    }
+
 
     button {
         font-size: 0.8rem;
         font-weight: 100;
     }
 
-    .progression, .rubrikProgression, .kursplan, .rubrikKursplan {
+    .progression, .rubrikProgression, .kursplan, .rubrikKursplan, .kurskod, .rubrikKurskod {
         display: none;
     }
 
