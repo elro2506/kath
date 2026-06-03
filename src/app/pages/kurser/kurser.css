@@ -98,9 +98,17 @@ button:visited {
     main {
         margin: 20px;
     }
-
+table {
+    table-layout: fixed;
+    width: 100%;
+}
     th {
         font-size: 0.8rem;
+    }
+
+    .points, .rubrikPoints {
+        width: 40px;
+        max-width: 40px;
     }
 
     button {

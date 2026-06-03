@@ -4,7 +4,7 @@
     <p>Här listar vi våra kurser som erbjuds på KaTH. Du har möjlighet att filtrera genom att skriva in sökord i fältet nedan, alternativt
         välja vilka ämnen du vill se. Det går även bra att sortera kurskod, kursnamn, poäng och progression genom att klicka på rubrikerna.
     </p>
-    <p>Om en kurs låter intressant, kan du klicka på "Lägg till" för att lägga till den i ditt <a href="/ramschema">ramschema</a>.</p>
+    <p>Om en kurs låter intressant, kan du klicka på "Lägg till" för att lägga till den i ditt <a routerLink="/ramschema">ramschema</a>.</p>
     <input placeholder="Filtrera på kurskod och kursnamn">
     <select id="subject" (change)="selectedSubject.set($any($event.target).value)">
         <option value="">Alla ämnen</option>
@@ -17,7 +17,7 @@
             <tr>
                 <th (click)="sortBy('courseCode')">Kurskod</th>
                 <th class="rubrikKursnamn" (click)="sortBy('courseName')">Kursnamn</th>
-                <th (click)="sortBy('points')">Poäng</th>
+                <th class="rubrikPoints" (click)="sortBy('points')">Poäng</th>
                 <th class="rubrikProgression" (click)="sortBy('progression')">Progression</th>
                 <th class="rubrikKursplan">Kursplan</th>
                 <th>Lägg till</th>
