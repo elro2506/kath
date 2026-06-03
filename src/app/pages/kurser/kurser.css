@@ -4,8 +4,7 @@ main {
 }
 
 main a {
-    color: red;
-    cursor: pointer;
+    color: black;
 }
 
 table {
@@ -111,9 +110,9 @@ table {
         font-size: 0.8rem;
     }
 
-    .points, .rubrikPoints {
-        width: 40px;
-        max-width: 40px;
+    .kurskod, .rubrikKursKod, .points, .rubrikPoints {
+        width: 60px;
+        max-width: 60px;
     }
 
     button {
