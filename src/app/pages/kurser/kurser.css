@@ -56,6 +56,10 @@ th {
     color: white;
 }
 
+.mobileKursnamn {
+    display: none;
+}
+
 input {
     width: 300px;
     padding: 0.6rem;
@@ -83,4 +87,27 @@ button:hover {
 
 button:visited {
     background-color: rgb(153, 153, 153);
+}
+
+@media (max-width: 900px) {
+    main {
+        margin: 20px;
+    }
+
+    th {
+        font-size: 0.8rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+
+    .progression, .rubrikProgression, .kursplan, .rubrikKursplan {
+        display: none;
+    }
+
+      select {
+        margin-left: 0;
+    }
 }

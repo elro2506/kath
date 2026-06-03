@@ -37,6 +37,27 @@ button {
     grid-template-columns: 2fr 1fr;
 }
 
+.ramschema-boxes a {
+    color: black;
+}
+
+.totalBox {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    height: fit-content;
+    box-shadow: 5px 2px 2px grey;
+    margin-bottom: 30px;
+    background-color: rgb(101, 158, 204);
+    color: white;
+}
+
+.totalBox p {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+
 @media (max-width: 900px) {
 
     main {
@@ -46,5 +67,16 @@ button {
         display: flex;
         flex-direction: column;
         margin: 20px;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .delete-button {
+       align-self: flex-start;
+       margin-bottom: 15px;
     }
 }

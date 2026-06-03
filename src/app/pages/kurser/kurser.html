@@ -1,3 +1,4 @@
+<div class="container">
 <main>
     <h1>Våra kurser</h1>
     <p>Här listar vi våra kurser som erbjuds på KaTH. Du har möjlighet att filtrera genom att skriva in sökord i fältet nedan, alternativt
@@ -15,10 +16,10 @@
         <thead>
             <tr>
                 <th (click)="sortBy('courseCode')">Kurskod</th>
-                <th (click)="sortBy('courseName')">Kursnamn</th>
+                <th class="rubrikKursnamn" (click)="sortBy('courseName')">Kursnamn</th>
                 <th (click)="sortBy('points')">Poäng</th>
-                <th (click)="sortBy('progression')">Progression</th>
-                <th>Kursplan</th>
+                <th class="rubrikProgression" (click)="sortBy('progression')">Progression</th>
+                <th class="rubrikKursplan">Kursplan</th>
                 <th>Lägg till</th>
             </tr>
         </thead>
@@ -26,13 +27,13 @@
             @for(kurs of filterCourses(); track kurs.courseCode) {
             <tr>
                 <td class="kurskod">{{ kurs.courseCode }}</td>
-                <td>{{ kurs.courseName }}</td>
+                <td class="kursnamn">{{ kurs.courseName }}</td>
                 <td class="points">{{ kurs.points }}</td>
                 <td class="progression">{{ kurs.progression }}</td>
                 <td class="kursplan"><a [href]="kurs.syllabus" target="_blank">Kursplan</a></td>
-                <td class="add"><button>Lägg till</button></td>
+                <td class="add"><button (click)="addRamschema(kurs)">Lägg till</button></td>
             </tr>
             }
         </tbody>
     </table>
-</main>
+</main></div>

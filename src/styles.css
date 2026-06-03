@@ -34,6 +34,10 @@ body {
     position: relative;
 }
 
+.container {
+      min-height: 100vh;
+}
+
 main {
     margin: 0;
     padding: 0;
@@ -83,6 +87,7 @@ main {
 footer {
     background-color: rgb(101, 158, 204);
     padding: 1rem;
+    margin-top: auto;
 }
 
 @media (max-width: 900px) {

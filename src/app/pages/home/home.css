@@ -23,7 +23,7 @@
     border-radius: 10px;
 }
 
-.hero-text button {
+.hero-button {
     border: 1px solid white;
     border-radius: 10px;
     display: inline-block;
@@ -34,9 +34,10 @@
     text-align: center;
     cursor: pointer;
     background-color: rgb(101, 158, 204);
+    text-decoration: none;
 }
 
-.hero-text button:hover {
+.hero-button:hover {
     background-color: rgb(19, 112, 189);
     color: white;
     transform: translateY(-2px)

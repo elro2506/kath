@@ -1,0 +1,22 @@
+article {
+    max-width: 800px;
+margin: 0 auto;
+    }
+
+    div {
+        margin: 30px;
+    }
+
+    button {
+        background-color: rgb(101, 158, 204);
+        padding: 1rem;
+        border-radius: 10px;
+        border: 1px solid white;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    button a {
+        text-decoration: none;
+        color: white;
+    }
