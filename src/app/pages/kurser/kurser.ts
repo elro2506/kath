@@ -6,10 +6,12 @@ import { Kurs } from '../../models/kurser';
 import { KursService } from '../../services/kurser';
 //Importerar RamschemaService som håller koll på ramschemat
 import { RamschemaService } from '../../services/ramschema';
+//RouterModule i stället för RouterLink för länken blev inte klickbar i brödtext
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-kurser',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './kurser.html',
   styleUrl: './kurser.css',
 })
