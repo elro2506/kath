@@ -91,6 +91,37 @@ footer {
     margin-top: auto;
 }
 
+
+@media (min-width: 1200px) and (max-width: 1600px) { 
+
+    .site-header {
+        grid-template-columns: auto 1fr;
+    }
+    .main-nav {
+        gap: 1.8rem;
+        
+    }
+    .main-nav a {
+        font-size: 1.6rem;
+        text-align: right;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) { 
+
+    .site-header {
+        grid-template-columns: auto 1fr;
+    }
+    .main-nav {
+        gap: 1.8rem;
+        
+    }
+    .main-nav a {
+        font-size: 1.3rem;
+        text-align: right;
+    }
+}
+
 @media (max-width: 900px) {
     .site-header {
         grid-template-columns: 1fr auto;
