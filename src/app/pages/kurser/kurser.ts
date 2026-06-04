@@ -68,7 +68,8 @@ filterCourses = computed(() => {
     courses = courses.filter(kurs => 
       /*Om kurskoden/kursnamnet innehållet ordet som skrivs i sökfältet*/
     kurs.courseCode.toLowerCase().includes(filter) || 
-    kurs.courseName.toLowerCase().includes(filter)
+    kurs.courseName.toLowerCase().includes(filter) ||
+    kurs.subject.toLowerCase().includes(filter)
   );
 }
 

@@ -1,40 +1,46 @@
 <div class="container">
-<main>
-    <h1>Våra kurser</h1>
-    <p>Här listar vi våra kurser som erbjuds på KaTH. Du har möjlighet att filtrera genom att skriva in sökord i fältet nedan, alternativt
-        välja vilka ämnen du vill se. Det går även bra att sortera kurskod, kursnamn, poäng och progression genom att klicka på rubrikerna.
-    </p>
-    <p>Om en kurs låter intressant, kan du klicka på "Lägg till" för att lägga till den i ditt <a routerLink="/ramschema">ramschema</a>.</p>
-    <input placeholder="Filtrera på kurskod och kursnamn">
-    <select id="subject" (change)="selectedSubject.set($any($event.target).value)">
-        <option value="">Alla ämnen</option>
-        @for (subject of subjects(); track subject) {
-        <option [value]="subject">{{ subject }}</option>
-        }
-    </select>
-    <table>
-        <thead>
-            <tr>
-                <th class="rubrikKurskod" (click)="sortBy('courseCode')">Kurskod</th>
-                <th class="rubrikKursnamn" (click)="sortBy('courseName')">Kursnamn</th>
-                <th class="rubrikPoints" (click)="sortBy('points')">Poäng</th>
-                <th class="rubrikProgression" (click)="sortBy('progression')">Progression</th>
-                <th class="rubrikKursplan">Kursplan</th>
-                <th>Lägg till</th>
-            </tr>
-        </thead>
-        <tbody>
-            @for(kurs of filterCourses(); track kurs.courseCode) {
-            <tr>
-                <td class="kurskod">{{ kurs.courseCode }}</td>
-                <td class="kursnamn">{{ kurs.courseName }}</td>
-                <td class="points">{{ kurs.points }}</td>
-                <td class="progression">{{ kurs.progression }}</td>
-                <td class="kursplan"><a [href]="kurs.syllabus" target="_blank">Kursplan</a></td>
-                <td class="add"><button (click)="addRamschema(kurs)">Lägg till</button></td>
-            </tr>
+    <main>
+        <h1>Våra kurser</h1>
+        <p>Här listar vi våra kurser som erbjuds på KaTH. Du har möjlighet att filtrera genom att skriva in sökord i
+            fältet nedan, alternativt
+            välja vilka ämnen du vill se. Det går även bra att sortera kurskod, kursnamn, poäng och progression genom
+            att klicka på rubrikerna.
+        </p>
+        <p>Om en kurs låter intressant, kan du klicka på "Lägg till" för att lägga till den i ditt <a
+                routerLink="/ramschema">ramschema</a>.</p>
+        <input placeholder="Filtrera på kurskod och kursnamn" (input)="filterText.set($any($event.target).value)">
+        <select id="subject" (change)="selectedSubject.set($any($event.target).value)">
+            <option value="">Alla ämnen</option>
+            @for (subject of subjects(); track subject) {
+            <option [value]="subject">{{ subject }}</option>
             }
-        </tbody>
-    </table>
-    <p>Visar {{ filterCourses().length }} av totalt {{ kursschema().length }} kurser.</p>
-</main></div>
+        </select>
+        <table>
+            <thead>
+                <tr>
+                    <th class="rubrikKurskod" (click)="sortBy('courseCode')">Kurskod</th>
+                    <th class="rubrikKursnamn" (click)="sortBy('courseName')">Kursnamn</th>
+                    <th (click)="sortBy('subject')">Ämne</th>
+                    <th class="rubrikPoints" (click)="sortBy('points')">Poäng</th>
+                    <th class="rubrikProgression" (click)="sortBy('progression')">Progression</th>
+                    <th class="rubrikKursplan">Kursplan</th>
+                    <th>Lägg till</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for(kurs of filterCourses(); track kurs.courseCode) {
+                <tr>
+                    <td class="kurskod">{{ kurs.courseCode }}</td>
+                    <td class="kursnamn">{{ kurs.courseName }}</td>
+                    <td class="amne">{{ kurs.subject }}</td>
+                    <td class="points">{{ kurs.points }}</td>
+                    <td class="progression">{{ kurs.progression }}</td>
+                    <td class="kursplan"><a [href]="kurs.syllabus" target="_blank">Kursplan</a></td>
+                    <td class="add"><button (click)="addRamschema(kurs)">Lägg till</button></td>
+                </tr>
+                }
+            </tbody>
+        </table>
+        <p>Visar {{ filterCourses().length }} av totalt {{ kursschema().length }} kurser.</p>
+    </main>
+</div>

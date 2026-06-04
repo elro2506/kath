@@ -20,6 +20,7 @@ Här kan man:
 - Sortera kurserna genom att man klickar på rubrikerna
 - Öppna kursplanerna via en länk, som öppnas i nytt fönster
 - Lägga till kurser i sitt ramschema, som finns på en annan undersida
+- Se antal kurser i det aktuella urvalet
 
 ### Ramschemasidan
 Här kan man:
