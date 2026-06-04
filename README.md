@@ -1,59 +1,69 @@
-# KathUniversity
+# KaTH University - Projektuppgift DT208G - Elin Ronda
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.12.
+I detta projekt har jag skapat en webbplats med Angular. På webbplatsen kan man se skolans kursutbud, filtrera kurser på sökord, sortera i bokstavsordning och söka kurs utefter ämne. Man kan även lägga till kurser i sitt eget ramschema som ligger i separat undersida. I detta ramschema har man möjlighet att se totalpoäng och att ta bort kurser från sin lista.
 
-## Development server
+KaTH University är ett fiktivt universitet med säte i småländska Katthult. Utformningen och tänket är kattinspirerat.
 
-To start a local development server, run:
+## Funktionalitet
+KaTH består av dessa sidor:
+- Startsida
+- Kurssidan
+- Ramschemasidan
+- Omsidan
+- 404-sidan
 
-```bash
-ng serve
-```
+### Kurssidan
+Här kan man:
+- Se alla kurser som är hämtade via en JSON-fil
+- Söka på kurskod och kursnamn
+- Filtrera kurser efter ämne
+- Sortera kurserna genom att man klickar på rubrikerna
+- Öppna kursplanerna via en länk, som öppnas i nytt fönster
+- Lägga till kurser i sitt ramschema, som finns på en annan undersida
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Ramschemasidan
+Här kan man:
+- Se kurserna som man lagt till, designade som "kort"
+- Ta bort kurser från listan i ramschemat
+- Se totalt antal högskolepoäng som tillagda kurser innefattar. Detta uppdateras när man lägger till eller tar bort kurs
+- Behålla sitt ramschema även när man laddar om sidan, tack vare localStorage
 
-## Code scaffolding
+### 404-sidan
+På denna sida finns en kort text om att man hamnat fel, och en tydlig knapp som tar en tillbaka till startsidan.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Tekniker
+Jag har byggt denna webbplats med:
+- Angular
+- TypeScript
+- HTML
+- CSS
+- Angular-router
+- Angular-signals
+- LocalStorage
+- Netlify för min publicering
 
-```bash
-ng generate component component-name
-```
+## Data
+Jag valde att spara ner JSON-filen lokalt på datorn, och ha den i public-mappen. Jag hämtar sedan innehållet med en service och Httpclient. Ramschemat hanterar jag i en separat service och där sparas valda kurser i en signal, samt i localStorage. Tack vare detta finns datan kvar när man laddar om sidan.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Extra funktionalitet och design
+Jag har genomfört grundfunktionerna på webbplatsen, men utöver det har jag fokuserat på en tilltalande och modern design med hjälp av CSS. Jag har tittat på olika universitets webbplatser för inspiration på innehåll och utformning, bland annat KTH, Lunds och Malmös universitet.
 
-```bash
-ng generate --help
-```
+Webbplatsen har en grafisk profil med blåa toner, en katt-logotyp, en hero-bild som ska föreställa skolbyggnaden, faktarutor, citat och en om-sida för att få den att likna en vanlig webbplats. Jag har arbetat med grid och flex för att få en bra design.
 
-## Building
+Utöver detta är webbplatsen responsivt anpassad för mindre enheter, då jag ersätter desktop-menyn med en hamburgarmeny på skärmar mindre än 900px. Likaså har jag anpassat tabellen och tagit bort, för mig, irrelevanta kolumner i det responsiva läget för att slippa en scroll-funktion och för att få plats med det relevanta på ett tilltagande sätt.
 
-To build the project run:
+Jag har lagt till en 404-sida som hänvisar besökaren tillbaka till startsidan.
 
-```bash
-ng build
-```
+## Services
+Jag använder mig av två services: ramschema och kurser. Kursservice hämtar själva kursdatan från JSON-filen och ramschemaservice hanterar besökarens ramschema genom att lägga till kurser, kontrollera så att det inte finns dubbletter, ta bort kurser från ramschemat samt spara i localStorage.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### Installation av detta projekt
+Om du vill köra detta projekt lokalt rekommenderar jag att du i terminalen kör:
+- npm install
+- ng serve
 
-## Running unit tests
+Och sedan öppnar http://localhost:4200/ 
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+#### Publicering
+Jag har publicerat mitt projekt hos Netlify.
+Länk till KaTH University: https://kathuniversity.netlify.app/

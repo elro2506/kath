@@ -79,7 +79,14 @@ if(subject) {
 /*Det är här som listan returneras så att man ser på webbplatsen. Den ersätter inte originallistan utan blir som en kopia.
 LocalCompare används för att jämförta texter och sortera. Dvs jämför string a med string b och se vad som
 kommer först i den alfabetiska ordningen*/
-return [...courses].sort((a, b) => String(a[column]).localeCompare(String(b[column])));
+return [...courses].sort((a, b) => {
+  if (column === 'points') {
+    return a.points - b.points;
+  } 
+
+  return String(a[column]).localeCompare(String(b[column]));
+
+});
 });
 
 //Hämtar in KursService, som jag använder för att hämta kursdatan från JSON-filen
