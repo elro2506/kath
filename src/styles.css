@@ -46,7 +46,7 @@ main {
 
 
 .main-nav {
-    justify-self: center;
+    justify-self: end;
     display: flex;
     gap: 3rem;
     max-width: 100%;
@@ -105,24 +105,14 @@ footer {
         font-size: 1.6rem;
         text-align: right;
     }
+
 }
 
-@media (min-width: 900px) and (max-width: 1200px) { 
 
-    .site-header {
-        grid-template-columns: auto 1fr;
-    }
-    .main-nav {
-        gap: 1.8rem;
-        
-    }
-    .main-nav a {
-        font-size: 1.3rem;
-        text-align: right;
-    }
-}
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+
+ 
     .site-header {
         grid-template-columns: 1fr auto;
     }

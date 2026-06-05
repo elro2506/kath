@@ -13,6 +13,10 @@
     justify-content: center;
 }
 
+.hero-text-margin {
+    margin: 20px;
+}
+
 .hero-text {
     background-color: white;
     max-width: 900px;
@@ -54,6 +58,11 @@ main {
 
 main p {
     font-size: 1.2rem;
+}
+
+.container-main {
+       
+        margin: 20px;
 }
 
 .start-h1 {
@@ -172,16 +181,20 @@ padding: 2rem;
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .hero-text {
     margin: 30px;
   }
 
-  .hero-text button {
-    font-size: 1rem;
+  .hero-button {
+    font-size: 1.2rem;
   }
 
   .hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text p {
     font-size: 1.3rem;
   }
 
@@ -189,12 +202,17 @@ padding: 2rem;
     margin: 20px;
   }
 
-  .boxes-container {
-width: 100%;
+  .boxes-container h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
   }
 
+  .boxes-container p {
+font-size: 1.3rem;
+}
+
   .boxes {
-    width: 100%;
+    width: 80%;
   }
 
   .boxes img {

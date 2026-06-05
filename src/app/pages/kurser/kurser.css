@@ -98,11 +98,13 @@ button:hover {
 button:visited {
     background-color: rgb(153, 153, 153);
 }
-
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     main {
         margin: 20px;
     }
+}
+@media (max-width: 900px) {
+  
 table {
     table-layout: fixed;
     width: 100%;
@@ -121,6 +123,9 @@ table {
     max-width: 90px;
 }
 
+.kursnamn {
+    white-space: normal;
+}
     button {
         font-size: 0.8rem;
         font-weight: 100;
