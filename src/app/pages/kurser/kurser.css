@@ -98,45 +98,55 @@ button:hover {
 button:visited {
     background-color: rgb(153, 153, 153);
 }
+
 @media (max-width: 1200px) {
     main {
         margin: 20px;
     }
 }
+
 @media (max-width: 900px) {
-  
-table {
-    table-layout: fixed;
-    width: 100%;
-}
+
+    table {
+        table-layout: fixed;
+        width: 100%;
+    }
+
     th {
         font-size: 0.8rem;
     }
 
-.rubrikPoints {
-    width: 60px;
-    max-width: 60px;
-}
+    .rubrikPoints {
+        width: 60px;
+        max-width: 60px;
+    }
 
-.rubrikButton {
-    width: 90px;
-    max-width: 90px;
-}
+    .rubrikButton {
+        width: 90px;
+        max-width: 90px;
+    }
 
-.kursnamn {
-    white-space: normal;
-}
+    .kursnamn {
+        white-space: normal;
+    }
+
     button {
         font-size: 0.8rem;
         font-weight: 100;
-        white-space: normal; /*För bättre radbrytning på mindre skärmar*/
+        white-space: normal;
+        /*För bättre radbrytning på mindre skärmar*/
     }
 
-    .progression, .rubrikProgression, .kursplan, .rubrikKursplan, .kurskod, .rubrikKurskod {
+    .progression,
+    .rubrikProgression,
+    .kursplan,
+    .rubrikKursplan,
+    .kurskod,
+    .rubrikKurskod {
         display: none;
     }
 
-      select {
+    select {
         margin-left: 0;
     }
 }

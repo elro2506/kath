@@ -10,7 +10,7 @@ import { RouterOutlet, RouterLink } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('kath-university');
-//Kollar om menyn är öppen eller stängd (främst för responsivt läge)
+  //Kollar om menyn är öppen eller stängd (främst för responsivt läge)
   menuOpen = false;
 
   //Öppnar och stänger menyn när man klickar på menyknappen

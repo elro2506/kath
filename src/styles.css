@@ -35,7 +35,7 @@ body {
 }
 
 .container {
-      min-height: 100vh;
+    min-height: 100vh;
 }
 
 main {
@@ -57,7 +57,7 @@ main {
     color: #111;
     font-size: 2rem;
     font-weight: 600;
-    
+
 }
 
 .main-nav a:hover {
@@ -92,15 +92,17 @@ footer {
 }
 
 
-@media (min-width: 1200px) and (max-width: 1600px) { 
+@media (min-width: 1200px) and (max-width: 1600px) {
 
     .site-header {
         grid-template-columns: auto 1fr;
     }
+
     .main-nav {
         gap: 1.8rem;
-        
+
     }
+
     .main-nav a {
         font-size: 1.6rem;
         text-align: right;
@@ -112,7 +114,7 @@ footer {
 
 @media (max-width: 1200px) {
 
- 
+
     .site-header {
         grid-template-columns: 1fr auto;
     }

@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 .hero-image {
     margin: 0;
     background-image: url('/byggnad.webp');
@@ -61,8 +62,8 @@ main p {
 }
 
 .container-main {
-       
-        margin: 20px;
+
+    margin: 20px;
 }
 
 .start-h1 {
@@ -97,7 +98,7 @@ main p {
 }
 
 .boxes p {
-padding: 0 1rem 1rem 1rem;
+    padding: 0 1rem 1rem 1rem;
 }
 
 .boxes:hover {
@@ -168,66 +169,68 @@ blockquote {
     object-fit: cover;
     display: block;
 }
+
 .citatnamn {
     text-align: center;
 }
 
 .citatet {
-padding: 2rem;
+    padding: 2rem;
 }
 
-.citattext, .radavstand {
+.citattext,
+.radavstand {
     line-height: 1.5;
 }
 
 
 @media (max-width: 1200px) {
-  .hero-text {
-    margin: 30px;
-  }
+    .hero-text {
+        margin: 30px;
+    }
 
-  .hero-button {
-    font-size: 1.2rem;
-  }
+    .hero-button {
+        font-size: 1.2rem;
+    }
 
-  .hero-text h1 {
-    font-size: 1.5rem;
-  }
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
 
-  .hero-text p {
-    font-size: 1.3rem;
-  }
+    .hero-text p {
+        font-size: 1.3rem;
+    }
 
-  main {
-    margin: 20px;
-  }
+    main {
+        margin: 20px;
+    }
 
-  .boxes-container h2 {
-    font-size: 1.6rem;
-    font-weight: 600;
-  }
+    .boxes-container h2 {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
 
-  .boxes-container p {
-font-size: 1.3rem;
-}
+    .boxes-container p {
+        font-size: 1.3rem;
+    }
 
-  .boxes {
-    width: 80%;
-  }
+    .boxes {
+        width: 80%;
+    }
 
-  .boxes img {
-    height: 200px;
-  }
+    .boxes img {
+        height: 200px;
+    }
 
-.fakta {
-    display: grid;
-    grid-template-columns: 1fr;
-}
+    .fakta {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
-  .bild-citat {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+    .bild-citat {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
- 
+
 }

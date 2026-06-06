@@ -20,7 +20,7 @@ export class Ramschema {
   ramschema = this.ramschemaService.ramschema;
 
   //Uträkning av totalpoängen, baserat på listan med valda kurser i ramschemat. Det räknas om om man lägger till/raderar kurs
-  totalPoints = computed (() => {
+  totalPoints = computed(() => {
     //Reduce lägger ihop poängen, dvs reducerar till ett totalvärde, från det som hittils räknats ihop + den aktuella kursen
     return this.ramschema().reduce((summa, kurs) => summa + kurs.points, 0);
   });

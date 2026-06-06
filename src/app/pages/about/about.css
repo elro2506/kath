@@ -13,8 +13,8 @@
     width: 400px;
     max-width: 100%;
     padding: 1rem;
-        border: 2px solid black;
-        border-radius: 30px;
+    border: 2px solid black;
+    border-radius: 30px;
 }
 
 main {
@@ -41,7 +41,7 @@ main p {
     object-fit: cover;
     display: block;
     object-position: center 30%;
-}   
+}
 
 .rutor-text {
     padding: 1rem 2rem;
@@ -60,12 +60,13 @@ main p {
 .bold {
     font-weight: 600;
 }
+
 .contactPersons {
     display: flex;
     flex-direction: column;
     padding: 2rem;
     border: 1px solid rgb(129, 129, 129);
-       margin: 0 auto;
+    margin: 0 auto;
     line-height: 0.1;
 }
 
@@ -85,73 +86,74 @@ hr {
     margin-bottom: 40px;
 }
 
-h1, .h2-leaders {
+h1,
+.h2-leaders {
     margin-top: 0;
 }
 
 @media (max-width: 1200px) {
     .kath-logo {
-      display: none;
+        display: none;
     }
- 
+
     .rutor {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    min-height: 500px;
-    background-color: rgb(101, 158, 204);
-    align-items: stretch;
-    overflow: hidden;
-}
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        min-height: 500px;
+        background-color: rgb(101, 158, 204);
+        align-items: stretch;
+        overflow: hidden;
+    }
 
-.rutor img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    object-position: center 30%;
-}
- 
+    .rutor img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        object-position: center 30%;
+    }
+
     main {
-    margin: 20px;
-  }
+        margin: 20px;
+    }
 
-  .teachers {
-    display: flex;
-    flex-direction: column;
-  }
+    .teachers {
+        display: flex;
+        flex-direction: column;
+    }
 
- .contactPersons {
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-    border: none;
-    gap: 4rem;
- }
+    .contactPersons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: none;
+        gap: 4rem;
+    }
 
- .contactPersons img {
-max-width: 400px;
-max-height: 400px;
-overflow-x: hidden;
- }
- 
- hr {
-    margin-bottom: 20px;
- }
+    .contactPersons img {
+        max-width: 400px;
+        max-height: 400px;
+        overflow-x: hidden;
+    }
+
+    hr {
+        margin-bottom: 20px;
+    }
 
 }
 
 @media (max-width: 900px) {
-.contactPersons {
-   display: flex;
-   flex-direction: column;
- }
+    .contactPersons {
+        display: flex;
+        flex-direction: column;
+    }
 
- .rutor {
-    display: grid;
-    grid-template-columns: 1fr;
-    min-height: auto;
-  }
+    .rutor {
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
 
-  .rutor img {
-    display: none;
-  }
+    .rutor img {
+        display: none;
+    }
 }

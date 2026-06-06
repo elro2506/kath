@@ -1,32 +1,35 @@
 <div class="container">
-<main>
-    <h1>Mitt ramschema</h1>
-    <p>Här listas kurserna som du valt från kurssidan upp. Du har möjlighet att ta bort kurser från ditt ramschema.</p>
-    <p>En automatisk uträkning av totalpoäng sker vid varje uppdatering av ditt ramschema.</p><br><br>
-    <section class="ramschema-boxes">
-        <div>
-            @if (ramschema().length === 0) {
-            <p>Du har inte lagt till några kurser än!</p>
-            } @else {
-            @for (kurs of ramschema(); track kurs.courseCode) {
-            <article>
-                <div>
-                    <h2>{{ kurs.courseName }}</h2>
-                    <p>Kurskod: {{ kurs.courseCode }}</p>
-                    <a [href]="kurs.syllabus" target="_blank">Länk till kursplan</a>
-                    <p>Progression: {{ kurs.progression }} </p>
-                    <p>{{ kurs.points }} poäng</p>
-                </div>
-                <div class="delete-button">
-                    <button (click)="deleteKurs(kurs.courseCode)">Radera</button></div>
-            </article>
-            }
-            }
-        </div>
-        <div class="totalBox">
-            <h3>Total antal poäng:</h3>
-            <p>{{ totalPoints() }}</p>
-        </div>
-    </section>
+    <main>
+        <h1>Mitt ramschema</h1>
+        <p>Här listas kurserna som du valt från kurssidan upp. Du har möjlighet att ta bort kurser från ditt ramschema.
+        </p>
+        <p>En automatisk uträkning av totalpoäng sker vid varje uppdatering av ditt ramschema.</p><br><br>
+        <section class="ramschema-boxes">
+            <div>
+                @if (ramschema().length === 0) {
+                <p>Du har inte lagt till några kurser än!</p>
+                } @else {
+                @for (kurs of ramschema(); track kurs.courseCode) {
+                <article>
+                    <div>
+                        <h2>{{ kurs.courseName }}</h2>
+                        <p>Kurskod: {{ kurs.courseCode }}</p>
+                        <a [href]="kurs.syllabus" target="_blank">Länk till kursplan</a>
+                        <p>Progression: {{ kurs.progression }} </p>
+                        <p>{{ kurs.points }} poäng</p>
+                    </div>
+                    <div class="delete-button">
+                        <button (click)="deleteKurs(kurs.courseCode)">Radera</button>
+                    </div>
+                </article>
+                }
+                }
+            </div>
+            <div class="totalBox">
+                <h3>Total antal poäng:</h3>
+                <p>{{ totalPoints() }}</p>
+            </div>
+        </section>
 
-</main></div>
+    </main>
+</div>
